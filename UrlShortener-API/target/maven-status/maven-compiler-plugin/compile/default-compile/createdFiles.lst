@@ -1,0 +1,8 @@
+com\fitprojects\urlshortenerapi\controller\UrlController.class
+com\fitprojects\urlshortenerapi\service\BaseConversion.class
+com\fitprojects\urlshortenerapi\UrlShortenerApiApplication.class
+com\fitprojects\urlshortenerapi\service\UrlService.class
+com\fitprojects\urlshortenerapi\config\SwaggerConfig.class
+com\fitprojects\urlshortenerapi\entity\Url.class
+com\fitprojects\urlshortenerapi\repository\UrlRepository.class
+com\fitprojects\urlshortenerapi\dto\UrlLongRequest.class

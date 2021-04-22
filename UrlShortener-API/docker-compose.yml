@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+
+  mysql-local:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=root6758930^%$@%47503727%%$##
+      - MYSQL_DATABASE=shorturl
+    #- MYSQL_USER=short
+    #- MYSQL_PASSWORD=gfbbb6758930^%$@%4750372r7%%$##3453
+      - # /K&CLIdHa0s9
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root6758930^%$@%47503727%%$##
+     #- MYSQL_PASSWORD=/K&CLIdHa0s9
+    ports:
+      - 3306:3306
+
+  myapp-main:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: amarin/url-shortener
+    restart: on-failure
+    depends_on:
+      - mysql-local
+    ports:
+      - 8080:8080
+      
